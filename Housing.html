@@ -1,0 +1,541 @@
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&amp;display=swap" rel="stylesheet"/>
+
+<style type="text/css">
+  .links {
+    display: none;
+  }
+  #content #content-block {
+    padding: 0px 20px 0px 20px;
+    user-select: none;
+  }
+  #header {
+    background: #fff url(/profiles/satellite/themes/esnbase/img/header_topbg.png) 0 0px repeat-x;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0%);
+  }
+  #title .title-container {
+    display: none;
+  }
+  nav.breadcrumb ol {
+    display: none;
+  }
+  #title {
+    background: #ffffff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0%);
+  }
+  #content {
+    overflow: hidden;
+    box-shadow: inset 0 -800px 1000px -500px #00aeef, inset 0 800px 1000px -500px #00aeef;
+  }
+  .grad {
+    height: 5px;
+    background: rgb(236, 0, 140);
+    background: linear-gradient( 90deg,
+      rgba(236, 0, 140, 1) 0%,
+      rgba(244, 123, 32, 1) 33.3%,
+      rgba(0, 174, 239, 1) 66.6%,
+      rgba(122, 193, 67, 1) 100%
+    );
+  }
+  .titleHeader {
+    display: inline-block;
+  }
+  h1.titleHeader {
+    font-size: 65px;
+    font-family: 'Francois One', sans-serif;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+  .titleText {
+    display: inline-block;
+  }
+  h1.titleText {
+    font-size: 50px;
+    font-family: 'Francois One', sans-serif;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+  .text {
+    font-size: 12.5pt;
+    font-family: Lato;
+    color: #000000;
+    align: center;
+  }
+  b.titleBottom {
+    font-size: 30px;
+    font-family: Lato;
+    color: #000000;
+  }
+  p {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  div.tempHouses:after,
+  div.residences:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  div.residences,
+  div.tempHouses {
+    margin: auto;
+    text-align: center;
+  }
+  div.residence {
+    float: left;
+    margin: 10px auto 10px;
+    width: 33.3%;
+  }
+  div.tempHouse {
+    float: left;
+    margin: 10px auto 10px;
+    width: 50%;
+  }
+  .wave {
+    width: 100vw;
+  }
+  .housing {
+    margin: auto;
+    text-align: center;
+  }
+  .housing:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .item {
+    float: left;
+    margin: 10px auto 10px;
+    width: 50%;
+  }
+  h2 {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 40px;
+    line-height: initial;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+  }
+  .wrapper {
+    background-color: white;
+    border-radius: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 0 100px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px #999;
+  }
+  .pic1 {
+    height: 100%;
+    background: url('/sites/default/files/imce/livensa_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic2 {
+    height: 100%;
+    background: url('/sites/default/files/imce/milestone_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic3 {
+    height: 100%;
+    background: url('/sites/default/files/imce/nice_way_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic4 {
+    height: 100%;
+    background: url('/sites/default/files/imce/uhub_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic5 {
+    height: 100%;
+    background: url('/sites/default/files/imce/nice_way_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic6 {
+    height: 100%;
+    background: url('/sites/default/files/imce/portolounge_1.png') no-repeat;
+    background-size: 100%;
+  }
+  .wrapper:hover .pic,
+  .wrapper:focus .pic {
+    transform: scale(1.2);
+  }
+  .content_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .housing_item {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 35px;
+    line-height: initial;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  .wrapper:hover .pic1 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic2 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic4 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic3 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic5 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic6 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .content_5 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_6 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_4 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_3 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_2 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_1 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  * {
+    transition: all 1.5s ease;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    div.tempHouse,
+    div.residence {
+      float: left;
+      margin: 10px auto 10px;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    .item {
+      float: left;
+      margin: 10px auto 10px;
+      width: 100%;
+      height: 300px;
+    }
+    .last {
+      float: left;
+      margin: 10px auto 10px;
+      width: 100%;
+    }
+    .wrapper {
+      background-color: white;
+      border-radius: 40px;
+      display: inline-block;
+      position: relative;
+      margin: 0px;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 0px 10px 25px #999;
+    }
+    .wave {
+      width: 150vw;
+    }
+    #branding {
+      left: 50px;
+    }
+    #mobile-menu {
+      left: 0px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .wrapper {
+      background-color: white;
+      border-radius: 40px;
+      display: inline-block;
+      position: relative;
+      margin: 0px;
+      height: 100%;
+      overflow: hidden;
+      box-shadow: 0px 10px 25px #999;
+    }
+    h1.titleHeader {
+      font-size: 45px;
+      font-family: 'Francois One', sans-serif;
+      color: #000000;
+      margin-bottom: 0px;
+    }
+    h1.titleText {
+      font-size: 30px;
+      font-family: 'Francois One', sans-serif;
+      color: #000000;
+      margin-bottom: 0px;
+    }
+    h2 {
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+      hyphens: auto;
+      font-size: 35px;
+      font-family: 'Francois One', sans-serif;
+      text-align: center;
+      color: #000000;
+      margin: 0px;
+    }
+  }
+  @keyframes animation1 {
+    0% {
+      transform: translateY(100px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 0.4;
+    }
+    30% {
+      opacity: 0.8;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    90% {
+      opacity: 0.2;
+    }        
+    100% {
+      transform: translateY(1000px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+</style>
+
+<center>
+  <div style="margin-left: -581px; margin-right: -580px; margin-bottom: 25px; margin-top: -45px;">
+    <img src="https://drive.google.com/uc?export=view&amp;id=1B48bWumAVO6rqLdI05W-cA5nQNvRKBxF" class="wave"/>
+  </div>
+</center>
+
+<center>
+  <div class="titleHeader">
+    <h1 class="titleHeader">ACCOMMODATION</h1>
+    <div class="grad">&nbsp;</div>
+  </div>
+</center>
+
+<p class="text">Moving to a new city is an amazing experience, but sometimes it can be tricky if you don't know it yet. With that in mind, we decided to help showing you some reliable options, and with their information, to start your search for a house in Porto in the best possible way.</p>
+
+<div class="residences">
+  <div style="margin-bottom: 20px;">
+    <div class="titleText">
+      <h1 class="titleText" style="margin-top: 0px;">RESIDENCES</h1>
+      <div class="grad">&nbsp;</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="housing">
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://uhub.eu/pt/building/asprela-porto/';">
+          <div class="pic4"></div>
+          <div class="content_1">
+            <h2 class="housing_item">Xior Residences</h2>
+            <p class="text" style="font-size: 20px; margin: 0px;">100? discount on the first month</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://nicewayhostels.com/live-in-nice-way';">
+            <div class="pic3"></div>
+            <div class="content_2">
+              <h2 class="housing_item">Nice Way</h2>
+              <p class="text" style="font-size: 20px; margin: 0px;">15% discount on accommodation</p>
+            </div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://www.milestone.net/location/milestone-porto-asprela/';">
+            <div class="pic2"></div>
+            <div class="content_3">
+              <h2 class="housing_item">Milestone</h2>
+              <p class="text" style="font-size: 20px; margin: 0px;">50% on the deposit</p>
+              <p class="text" style="font-size: 20px; margin: 0px;">200? on the booking fee</p>
+              <p class="text" style="font-size: 20px; margin: 0px;">Promo Code: <b>ESNPORTO</b></p>
+            </div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://en.livensaliving.com/alojamiento-oporto';">
+            <div class="pic1"></div>
+            <div class="content_4">
+              <h2 class="housing_item">Livensa</h2>
+              <p class="text" style="font-size: 20px; margin: 0px;">30% discount on the booking fee through ESN Porto</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="tempHouses">
+  <div style="margin-bottom: 20px;">
+    <div class="titleText">
+      <h1 class="titleText" style="margin-top: 60px;">TEMPORARY ACCOMMODATION</h1>
+      <div class="grad">&nbsp;</div>
+    </div>
+  </div>
+
+  <div>
+    <div class="housing">
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://portoloungehostel.com/';">
+          <div class="pic6"></div>
+          <div class="content_5">
+            <h2 class="housing_item">Porto Lounge</h2>
+            <p class="text" style="font-size: 20px; margin: 0px;">15% discount on accommodation</p>
+            <p class="text" style="font-size: 20px; margin: 0px;">Promo Code: <b>ESN15</b></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="item">
+        <div class="wrapper" onclick="location.href='https://nicewayhostels.com/live-in-nice-way';">
+            <div class="pic5"></div>
+            <div class="content_6">
+              <h2 class="housing_item">Nice Way</h2>
+              <p class="text" style="font-size: 20px; margin: 0px;">15% discount on accommodation</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<center>
+  <div class="titleBottom" style="margin-top: 30px; margin-bottom: 55px;">
+    <b class="titleBottom">#ErasmusAddicted</b>
+  </div>
+</center>

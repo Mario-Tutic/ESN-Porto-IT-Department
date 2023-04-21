@@ -1,0 +1,454 @@
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&amp;display=swap" rel="stylesheet"/>
+
+<style type="text/css">
+  .links {
+    display: none;
+  }
+  #content #content-block {
+    padding: 0px 20px 0px 20px;
+    user-select: none;
+  }
+  #header {
+    background: #fff url(/profiles/satellite/themes/esnbase/img/header_topbg.png) 0 0px repeat-x;
+    box-shadow: 0 3px 3px rgb(0 0 0 / 0%);
+  }
+  #title .title-container {
+    display: none;
+  }
+  nav.breadcrumb ol {
+    display: none;
+  }
+  #title {
+    background: #ffffff;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 0%);
+  }
+  #content {
+    overflow: hidden;
+    box-shadow: inset 0 -800px 1000px -500px #00aeef, inset 0 800px 1000px -500px #00aeef;
+  }
+  .grad {
+    height: 5px;
+    background: rgb(236, 0, 140);
+    background: linear-gradient(90deg,
+      rgba(236, 0, 140, 1) 0%,
+      rgba(244, 123, 32, 1) 33.3%,
+      rgba(0, 174, 239, 1) 66.6%,
+      rgba(122, 193, 67, 1) 100%
+    );
+  }
+  .titleHeader {
+    display: inline-block;
+  }
+  h1.titleHeader {
+    font-size: 65px;
+    font-family: 'Francois One', sans-serif;
+    color: #000000;
+    margin-bottom: 0px;
+  }
+  p {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+  .text {
+    font-size: 12.5pt;
+    font-family: Lato;
+    color: #000000;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  b.titleBottom {
+    font-size: 30px;
+    font-family: Lato;
+    color: #000000;
+  }
+  .merch {
+    margin: auto;
+    text-align: center;
+  }
+  .merch:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  .item {
+    float: left;
+    margin: 10px auto 10px;
+    width: 50%;
+  }
+  h2 {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 35px;
+    line-height: initial;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+  }
+  .wrapper {
+    border-radius: 40px;
+    display: inline-block;
+    position: relative;
+    margin: 0 100px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px #999;
+  }
+  .pic1 {
+    height: 100%;
+    background: url('/sites/default/files/imce/tote_0.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic2 {
+    height: 100%;
+    background: url('/sites/default/files/imce/copos.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic3 {
+    height: 100%;
+    background: url('/sites/default/files/imce/bottle1.png') no-repeat;
+    background-size: 100%;
+  }
+  .pic4 {
+    height: 100%;
+    background: url('/sites/default/files/imce/t-shirt.png') no-repeat;
+    background-size: 100%;
+  }
+  .wrapper:hover .pic,
+  .wrapper:focus .pic {
+    transform: scale(1.2);
+  }
+  .wave {
+    width: 100vw;
+  }
+  @media only screen and (max-width: 800px) {
+    .item {
+      float: left;
+      margin: 10px auto 10px;
+      width: 100%;
+      height: 300px;
+    }
+    .last {
+      float: left;
+      margin: 10px auto 10px;
+      width: 100%;
+    }
+    .wrapper {
+        border-radius: 40px;
+        display: inline-block;
+        position: relative;
+        margin: 0px;
+        height: 100%;
+        overflow: hidden;
+        box-shadow: 0px 10px 25px #999;
+    }
+    .wave {
+      width: 150vw;
+    }
+    #branding {
+      left: 50px;
+    }
+    #mobile-menu {
+      left: 0px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .wrapper {
+        border-radius: 40px;
+        display: inline-block;
+        position: relative;
+        margin: 0px;
+        height: 100%;
+        overflow: hidden;
+        box-shadow: 0px 10px 25px #999;
+    }
+    h1.titleHeader {
+      font-size: 45px;
+      font-family: 'Francois One', sans-serif;
+      color: #000000;
+      margin-bottom: 0px;
+    }
+    h2 {
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        font-size: 35px;
+        font-family: 'Francois One', sans-serif;
+        text-align: center;
+        color: #000000;
+        margin: 0px;
+    }
+  }
+  .box_area {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .box_area img {
+    position: absolute;
+    display: block;
+    list-style: none;
+    bottom: -150px;
+    z-index: -1
+  }
+  .image1 {
+    width: 175px;
+    left: 80%;
+    animation: animation1 20s linear infinite;  
+  }
+  .image3 {
+    width: 100px;
+    left: 100%;
+    animation: animation1 7s linear infinite;  
+  }
+  .image4 {
+    width: 150px;
+    left: 0%;
+    animation: animation1 15s linear infinite;  
+  }
+  .image5 {
+    width: 150px;
+    left: -150px;
+    animation: animation1 12s linear infinite;  
+  }
+  .image6 {
+    width: 125px;
+    left: 45%;
+    animation: animation1 9s linear infinite;  
+  }
+  @keyframes animation1 {
+    0% {
+      transform: translateY(100px) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 0.4;
+    }
+    30% {
+      opacity: 0.8;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.8;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    90% {
+      opacity: 0.2;
+    }        
+    100% {
+      transform: translateY(1000px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .content_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .content_4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .merch_item {
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    font-size: 40px;
+    line-height: initial;
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0px;
+  }
+  .wrapper:hover .pic1 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic2 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic4 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .pic3 {
+    opacity: 0.1;
+  }
+  .wrapper:hover .content_4 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_3 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_2 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  .wrapper:hover .content_1 {
+    opacity: 1;
+    background: rgba(0, 174, 239, .25);
+  }
+  * {
+    transition: all 1.5s ease;
+  }
+</style>
+
+<center>
+  <div style="margin-left: -581px; margin-right: -580px; margin-top: -50px;">
+    <img src="https://drive.google.com/uc?export=view&amp;id=1B48bWumAVO6rqLdI05W-cA5nQNvRKBxF" class="wave"/>
+  </div>
+</center>
+<ul class="box_area">
+  <li style="list-style: none;"><img src="/sites/default/files/imce/camisola.png" width=100% height=100% class="image1"/></li>
+  <li style="list-style: none;"><img src="/sites/default/files/imce/garrafa1.png" width=100% height=100% class="image3"/></li>
+  <li style="list-style: none;"><img src="/sites/default/files/imce/tote_0.png" width=100% height=100% class="image4"/></li>
+  <li style="list-style: none;"><img src="/sites/default/files/imce/copo.png" width=100% height=100% class="image5"/></li>
+  <li style="list-style: none;"><img src="/sites/default/files/imce/camisola_1.png" width=100% height=100% class="image6"/></li>
+</ul>
+<center>
+  <div class="titleHeader">
+    <h1 class="titleHeader">MERCHANDISING</h1>
+    <div class="grad">&nbsp;</div>
+  </div>
+</center>
+
+<div>&nbsp;</div>
+
+<div class="merch">
+  <div class="item">
+    <div class="wrapper" onclick="location.href='https://esnporto.org/?q=tshirt';">
+      <div class="pic4"></div>
+      <div class="content_1">
+        <h2 class="merch_item">Erasmus Addicted</h2>
+        <h2 class="merch_item">T-Shirt</h2>
+      </div>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="wrapper" onclick="location.href='https://esnporto.org/?q=bottle';">
+        <div class="pic3"></div>
+        <div class="content_2">
+          <h2 class="merch_item">ESN Porto Reusable</h2>
+          <h2 class="merch_item">Water Bottle</h2>
+        </div>
+    </div>
+  </div>
+  
+  <div class="item">
+    <div class="wrapper" onclick="location.href='https://esnporto.org/?q=cup';">
+        <div class="pic2"></div>
+        <div class="content_3">
+          <h2 class="merch_item">ESN Porto Green Cup</h2>
+        </div>
+    </div>
+  </div>
+
+  <div class="item">
+    <div class="wrapper" onclick="location.href='https://esnporto.org/?q=totebag';">
+        <div class="pic1"></div>
+        <div class="content_4">
+          <h2 class="merch_item">Discover Porto Tote Bag</h2>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div>&nbsp;</div>
+
+<center>
+  <div class="titleBottom" style="margin-top: 30px; margin-bottom: 55px;">
+    <b class="titleBottom">#ErasmusAddicted</b>
+  </div>
+</center>
+
+
+
+
+
+
+<div class="item">
+  <div class="wrapper" onclick="location.href='https://esnporto.org/?q=hoodie';">
+      <div class="pic5"></div>
+      <div class="content_5">
+        <h2 class="merch_item">Discover Porto Hoodie</h2>
+      </div>
+  </div>
+</div>
