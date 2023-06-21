@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+}
+.title2{
+    text-align: center;
+}
+.title {
+    -webkit-text-stroke:3px rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .form {
+    height: 100vh;
+  }
+  h1{
+    font-size: 7vw;
+  }
+
+  .hero { 
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('assets/food.jpeg');
+    background-size: cover;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .btn-dark{
+    background-color: rgb(19, 18, 18);
+    border-width: 1px;
+    border-color: rgb(174, 174, 174);
+}
+
+footer{
+    text-align: center;
+}
+
+a:link {
+    color: rgb(58, 192, 212);
+  }
+  
+  /* visited link */
+a:visited {
+    color: rgb(58, 192, 212);
+  }
+
+
+p{
+    color:white;
+  }
